@@ -36,21 +36,26 @@ class InterviewFuncs():
                 # print(finalist)
                 # print("Testing :", each , "vs" , item)
                 if (each < item) :
-                    # print("list2 win")
+                    print("list2 win")
+                    print(finalist[-1])
                     if each > finalist[-1] :
                         finalist.append(each)
                             
                 elif (item < each) :
-                    # print("list1 win")
-                    # print(finalist[-1])
+                    print("list1 win")
+                    print(finalist[-1])
                     if item > finalist[-1]:
                         finalist.append(item)
+                print("index:", index)
+            print("idx:", idx)
 
         finalist.pop(0)
         print("Combined list before check missing:", finalist)
         # check if all items used, use bin search to find items not inserted
         print("~~~~")
         extra = []
+       
+
         for i in list1:
             if self.binarysearch(finalist,i) == None:
                 extra.append(i)
@@ -66,7 +71,7 @@ class InterviewFuncs():
 
 def main():
 
-    thing = InterviewFuncs([1, 3, 6, 9, 10,13,16,21], [0, 5, 12, 15, 17,18, 22,24] )
+    thing = InterviewFuncs([1, 3, 6, 9, 10,13,16,21], [0, 5, 12, 15, 17,18, 22,24,27,28] )
     thing.combineandsort()
 
 if __name__ == "__main__":
