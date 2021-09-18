@@ -71,7 +71,7 @@ class InterviewFuncs():
 
 def main():
 
-    thing = InterviewFuncs([1, 3, 6, 9, 10,13,16,21], [0, 5, 12, 15, 17,18, 22,24,27,28] )
+    thing = InterviewFuncs([1, 3, 6, 9, 10,13,16,21,33], [0, 5, 12, 15, 17,18, 22,24,26,27,28] )
     thing.combineandsort()
 
 if __name__ == "__main__":
