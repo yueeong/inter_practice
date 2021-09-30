@@ -14,16 +14,16 @@ class SearchAlgo():
             print("midpoint:", str(idx_mid), "idx_lo:", str(idx_lo), "idx_hi:",str(idx_hi) )
             if num_list[idx_mid] == target:
                 return idx_mid
-            elif num_list[idx_mid] < target:
-                idx_hi = idx_mid - 1
             elif num_list[idx_mid] > target:
+                idx_hi = idx_mid - 1
+            elif num_list[idx_mid] < target:
                 idx_lo = idx_mid + 1
 
 
 def main():
     searcher = SearchAlgo()
     print("Position in list that has your number: " + 
-    str(searcher.binarysearch([22,18,16,15,11,6,3,1], 11)))
+    str(searcher.binarysearch([1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,34], 34)))
 
 if __name__ == "__main__":
     main()

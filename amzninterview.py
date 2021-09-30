@@ -46,6 +46,32 @@ class InterviewFuncs():
 
         return headplaceholder.next
 
+    def cands(self):
+        
+
+        mergedlist = []
+        x = 0
+        y = 0
+        while x < len(self.sortedlist1) and y < len(self.sortedlist2):
+            print(x,y)
+            if self.sortedlist1[x] < self.sortedlist2[y]:
+                mergedlist.append(self.sortedlist1[x])
+                x += 1
+            else:
+                mergedlist.append(self.sortedlist2[y])
+                y += 1
+        
+        print("stopped at counts:", x, y)
+        while x < len(self.sortedlist1):
+            mergedlist.append(self.sortedlist1[x])
+            x += 1
+        
+        while y < len(self.sortedlist2):
+            mergedlist.append(self.sortedlist2)
+            y += 1
+        print(mergedlist)
+
+
 def printlistnode(node):
     while node != None:
         print(node.val, end=' ')
@@ -53,8 +79,9 @@ def printlistnode(node):
 
 def main():
 
-    thing = InterviewFuncs([1, 3, 6, 9, 10,13,16,21,22,33], [0, 5, 12, 15, 17,18,22, 22,24,26,27,28] )
-    printlistnode(thing.combineandsort())
+    thing = InterviewFuncs([1, 5, 6,9,11], [2,4,6,10] )
+    # printlistnode(thing.combineandsort())
+    thing.cands()
     
 
 if __name__ == "__main__":
