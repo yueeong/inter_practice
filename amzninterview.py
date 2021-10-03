@@ -47,8 +47,6 @@ class InterviewFuncs():
         return headplaceholder.next
 
     def cands(self):
-        
-
         mergedlist = []
         x = 0
         y = 0

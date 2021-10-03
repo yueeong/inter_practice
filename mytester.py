@@ -62,15 +62,15 @@ def tester():
 tester()
 
 def mtable(n):
-    for y in range(0,n+1):
-        if y == 0:
+    for col in range(0,n+1):
+        if col == 0:
             print('  ',end='')
         else:
-            print(y, end=' ')
-    for x in range(1,n+1):
+            print(col, end=' ')
+    for row in range(1,n+1):
         print('\n')
-        print(x, end=' ')
-        for y in range(1,n+1):
-            print(x*y, end=' ')
+        print(row, end=' ')
+        for col in range(1,n+1):
+            print(row*col, end=' ')
         
-mtable(3)
+mtable(4)
