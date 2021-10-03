@@ -1,6 +1,6 @@
 
 # sort random arranged list
-from mergelists import merger
+#from mergelists import merger
 
 
 def sortlist(l):
@@ -39,7 +39,6 @@ def merge_sort(l):
         return l
     
     left_list, right_list = merge_sort(l[0:len(l)//2]) , merge_sort(l[len(l)//2:])
-    
 
     merged_list = merger(left_list, right_list)
     return merged_list

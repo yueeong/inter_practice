@@ -72,8 +72,8 @@ def merger(l1,l2):
 
 
 def main():
-    arr1 = [2,4,6,8,10,15]
-    arr2 = [1,3,5,9,11,13]
+    arr1 = [2,4,6,8,10,15,16]
+    arr2 = [1,3,5,9,11,13,17,19]
     # makes llinked list from list/arr of numbers
     ln1 = linkedlistmaker(arr1)
     ln2 = linkedlistmaker(arr2)
